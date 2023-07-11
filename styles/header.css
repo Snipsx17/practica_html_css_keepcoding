@@ -1,0 +1,144 @@
+.navbar{
+    display: none;
+    z-index: 4;
+}
+
+
+.hero{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url("../assets/app/header_img_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video__header{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.hero__content{
+    text-align: center;
+    z-index: 5;
+}
+
+.hero__content h1{
+    font-size: 3.5rem;
+    letter-spacing: -1px;
+    line-height: .5;
+}
+
+.hero__content h3{
+    font-size: 2.6rem;
+    animation: zoomInUp 2s linear;
+}
+
+.hero__logo{
+    width: 30rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    animation: fadeIn 1s linear;
+}
+
+.hero__icons{
+    margin-top: 2rem;
+}
+
+/******* RESPONSIVE *******/
+
+@media(min-width: 768px){
+    .hero__content h1{
+        font-size: 5rem;
+    }
+
+    .hero__content h3{
+        font-size: 3rem;
+    }
+
+}
+
+@media(min-width: 992px){
+    .navbar{
+        position: fixed;
+        background-color: rgba(99, 157, 173, 0.57);
+        z-index: 10;
+        top: 0;
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        padding: 2rem 0 1rem;
+    }
+
+    .nav__list{
+        display: flex;
+        align-items: flex-end;
+        gap: 2rem;
+    }
+
+    .nav__list .nav__item{
+        list-style: none;
+    }
+
+    .nav__list .nav__item a{
+        text-decoration: none;
+        color: var(--light);
+        text-transform: uppercase;
+        font-family: var(--font-secondary);
+        font-weight: 700;
+        padding: 1rem;
+        transition: transform 1s linear;
+    }
+
+    .nav__list .nav__item a:hover{
+        transform: rotate(20deg);
+        background-color: brown;
+    }
+
+    .hero__logo{
+        display: none;
+    }
+
+    .video__header{
+        display: block;
+    }
+
+    .hero__content{
+        color: var(--light);
+    }
+}
+
+/******* ANIMATION *******/
+  
+  @keyframes zoomInUp{
+    0%{
+      opacity: 0;
+      transform: scale3d(.1,.1,.1) translate3d(0,1000px,0);
+      animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+    }
+    60%{
+      opacity: 1;
+      transform: scale3d(.475,.475,.475) translate3d(0,-60px,0);
+      animation-timing-function: cubic-bezier(.175,.885,.32,1);
+    }
+  } 
+
+  @keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+  }

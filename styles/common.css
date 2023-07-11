@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=M+PLUS+1p:wght@300;400&display=swap');
+
+:root{
+    --main-color: #649DAD;
+    --secondary-color: #C8F4DE;
+    --light: #ffffff;
+    --dark: #17191f;
+    --font-princial: 'Jost', sans-serif;
+    --font-secondary: 'M PLUS 1p', sans-serif;
+}
+
+/******* RESET HTML *******/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px*/
+    scroll-behavior: smooth;  
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+}
+
+/******* COMMON *******/
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: 'Jost', sans-serif;
+}
+
+h3, p{
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.no--margin{
+    margin: 0;
+}
