@@ -118,6 +118,16 @@
     }
 }
 
+@media(min-width: 1200px){
+    .hero{
+        justify-content: flex-start;
+    }
+
+    .hero__content{
+        padding-left: 5rem;
+    }
+}
+
 /******* ANIMATION *******/
   
   @keyframes zoomInUp{
