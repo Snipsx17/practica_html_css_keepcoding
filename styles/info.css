@@ -2,6 +2,7 @@
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
+    background-image: url("../assets/app/sk_bg.png");
 }
 
 .info__title{
