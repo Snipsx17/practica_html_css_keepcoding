@@ -23,6 +23,11 @@
 
 label{
     text-transform: uppercase;
+    font-family: var(--font-secondary);
+}
+
+span{
+    font-family: var(--font-secondary);
 }
 
 .input__form input:not(input[type="checkbox"]){

@@ -42,6 +42,11 @@ h3, p{
     font-family: 'M PLUS 1p', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .capitalize{
     text-transform: capitalize;
 }
