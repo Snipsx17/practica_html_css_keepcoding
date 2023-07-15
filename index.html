@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/info.css" />
     <link rel="stylesheet" href="styles/skills.css" />
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/components.css">
     <title>Portfolio Uberth Hernandez | Desarrollador Web</title>
   </head>
   <body>
@@ -162,8 +163,8 @@
                 </div>
             </div>
             <div class="input__form">
-                <label for="telefono">telefono</label>
-                <input type="tel" name="telefono" pattern="[0-9]{9}" required placeholder="000 000 000">
+                <label for="telefono">telefono (000-000-000)</label>
+                <input type="tel" name="telefono" pattern="[0-9]{9}" title="9 numeros" required>
             </div>
             <div class="form__radio">
                 <label for="telefono">¿Como me conociste?</label>
@@ -179,7 +180,7 @@
             </div>
             <div class="input__form">
                 <label for="git-tag">Tag de GitHub</label>
-                <input type="text" name="git" pattern="^@[^\s]+">
+                <input type="text" name="git-tag" pattern="^@[^\s]+" title="Debe comenzar por un @">
             </div>
             <label for="mensaje">Mas informacion sobre ti</label>
             <br>
@@ -188,9 +189,9 @@
                 <input type="checkbox" name="newsletter" value="registrarme">
                 <label for="newsletter">Newsletter</label>
             </div>
-            <div class="form_buttoms">
-                <input type="submit" value="Enviar">
-                <button type="reset">Reset</button>
+            <div class="form__btns">
+                <input class="btn" type="submit" value="Enviar">
+                <button class="btn btn--secondary" type="reset">Reset</button>
             </div>
         </form>
         </div>

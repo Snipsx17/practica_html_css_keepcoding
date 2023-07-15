@@ -1,7 +1,3 @@
-.contact{
-    
-}
-
 .form{
     margin: 0 auto;
     padding: 2rem;
@@ -10,6 +6,7 @@
 .form h2{
     font-size: 3rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .form__row{
@@ -30,12 +27,13 @@ label{
 .input__form input:not(input[type="checkbox"]){
     height: 3.8rem;  
     width: 100%;
-    border-radius: .5rem;
-    padding: .5rem;
 }
 
 .input__form input, textarea{
     border: 1px solid var(--main-color);
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: var(--bg-form-input);
 }
 
 textarea{
@@ -45,4 +43,42 @@ textarea{
 
 .form__radio input[type="radio"],input[type="checkbox"]{
     margin-right: 1rem;    
+}
+
+.form__btns{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/******* RESPONSIVE *******/
+@media(min-width: 768px){
+    .contact{
+        background-image: url("../assets/app/form_bg_768.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .form{
+        width: 500px;
+        background-color: var(--light);
+    }
+}
+
+@media(min-width: 992px){
+    .contact{
+        background-image: url("../assets/app/form_bg_992.jpg");
+    }
+}
+
+@media(min-width: 1200px){
+    .contact{
+        background-image: url("../assets/app/form_bg_1200.jpg");
+    }
+}
+
+@media(min-width: 1400px){
+    .contact{
+        background-image: url("../assets/app/form_bg_1400.jpg");
+    }
 }

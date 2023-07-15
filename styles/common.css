@@ -5,6 +5,7 @@
     --secondary-color: #C8F4DE;
     --light: #ffffff;
     --dark: #17191f;
+    --bg-form-input: rgba(61, 147, 171, 0.2);
     --font-princial: 'Jost', sans-serif;
     --font-secondary: 'M PLUS 1p', sans-serif;
 }
