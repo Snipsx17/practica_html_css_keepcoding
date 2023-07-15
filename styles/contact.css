@@ -1,6 +1,7 @@
 .form{
     margin: 0 auto;
     padding: 2rem;
+    padding-bottom: 10rem;
 }
 
 .form h2{
@@ -69,16 +70,28 @@ textarea{
     .contact{
         background-image: url("../assets/app/form_bg_992.jpg");
     }
+
+    .form{
+        width: 600px;
+    }
 }
 
 @media(min-width: 1200px){
     .contact{
         background-image: url("../assets/app/form_bg_1200.jpg");
     }
+
+    .form{
+        width: 700px;
+    }
 }
 
 @media(min-width: 1400px){
     .contact{
         background-image: url("../assets/app/form_bg_1400.jpg");
+    }
+
+    .form{
+        width: 750px;
     }
 }
