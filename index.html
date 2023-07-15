@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/info.css" />
     <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/contact.css">
     <title>Portfolio Uberth Hernandez | Desarrollador Web</title>
   </head>
   <body>
@@ -149,6 +150,56 @@
           </div>
       </section>
       <!-- END SKILLS -->
+      <section class="contact">
+        <div class="form">
+            <h2>¿Hablamos?</h2>
+        <form action="#" method="post">
+            <div class="form__row">
+                <div class="input__form">
+                    <label for="nombre">nombre</label>
+                    <input type="text" name="nombre" required>
+                </div>
+                <div class="input__form">
+                    <label for="apellido">apellido</label>
+                    <input type="text" name="apellido" required>
+                </div>
+            </div>
+            <div class="input__form">
+                <label for="telefono">telefono</label>
+                <input type="tel" name="telefono" pattern="[0-9]{9}" required placeholder="000 000 000">
+            </div>
+            <div class="form__radio">
+                <label for="telefono">¿Como me conociste?</label>
+                <br>
+                <input type="radio" name="como_me_conociste" value="universidad" required><span>Universidad</span>
+                <br>
+                <input type="radio" name="como_me_conociste" value="KeepCoding Kick-off" required><span>KeepCoding Kick-off</span>
+                <br>
+                <input type="radio" name="como_me_conociste" value="Colegio" required><span>Colegio</span>
+                <br>
+                <input type="radio" name="como_me_conociste" value="GitHub"  required><span>GitHub</span>
+                <br>
+            </div>
+            <div class="input__form">
+                <label for="git-tag">Tag de GitHub</label>
+                <input type="text" name="git" pattern="^@[^\s]+">
+            </div>
+            <label for="mensaje">Mas informacion sobre ti</label>
+            <br>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+            <div class="">
+                <input type="checkbox" name="newsletter" value="registrarme">
+                <label for="newsletter">Newsletter</label>
+            </div>
+            <div class="form_buttoms">
+                <input type="submit" value="Enviar">
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        </div>
+        
+
+      </section>
     </main>
   </body>
 </html>

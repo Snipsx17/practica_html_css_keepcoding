@@ -1,0 +1,48 @@
+.contact{
+    
+}
+
+.form{
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.form h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.form__row{
+    display: flex;
+    flex-direction: column;
+}
+
+.input__form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8rem;
+}
+
+label{
+    text-transform: uppercase;
+}
+
+.input__form input:not(input[type="checkbox"]){
+    height: 3.8rem;  
+    width: 100%;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.input__form input, textarea{
+    border: 1px solid var(--main-color);
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+}
+
+.form__radio input[type="radio"],input[type="checkbox"]{
+    margin-right: 1rem;    
+}

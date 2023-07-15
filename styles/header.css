@@ -3,7 +3,6 @@
     z-index: 4;
 }
 
-
 .hero{
     position: relative;
     height: 100vh;
@@ -69,7 +68,8 @@
 @media(min-width: 992px){
     .navbar{
         position: fixed;
-        background-color: rgba(99, 157, 173, 0.57);
+        background: rgb(100,157,173);
+background: linear-gradient(180deg, rgba(100,157,173,0.7987570028011204) 0%, rgba(100,157,173,0.26094187675070024) 100%);
         z-index: 10;
         top: 0;
         display: block;
