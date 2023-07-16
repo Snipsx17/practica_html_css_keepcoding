@@ -69,6 +69,11 @@ textarea{
         width: 500px;
         background-color: var(--light);
     }
+
+    .form__btns{
+        margin-top: 3rem;
+        text-align: left;
+    }
 }
 
 @media(min-width: 992px){

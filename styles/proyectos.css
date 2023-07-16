@@ -1,0 +1,46 @@
+.project__video{
+    width: 100vw;
+    height: 80vw;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in;
+}
+
+.project__video video{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.project__video .btn{
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+.projects__title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.projects{
+    margin: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    gap: 2rem;
+}
+
+.project img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.project h4{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 0;
+}
