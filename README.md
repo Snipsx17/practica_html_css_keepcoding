@@ -42,4 +42,4 @@ He puesto en practica todo lo aprendendo en el modulo, algunas cosas que podras 
 
 Este proyecto contiene archivos basicos de HTML y CSS con lo cual para implementarlo no es necesario ningun servidor web, con abrir el archivo `index.html` el navigador debe interpretarlo sin problema. Si quieres modificarlo recomiendo utilizar la extencion **Live Server** para VS code y asi poder visializar los cambios en tiempo real.
 
-Puedes ver el sitio web desplegado aqui
+Puedes ver el sitio web desplegado aqui [Portafolio](https://vermillion-lebkuchen-5a11e4.netlify.app/index.html#contacto)
